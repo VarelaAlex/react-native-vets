@@ -84,3 +84,6 @@ export const ContactButton = styled(Button).attrs({
   padding: ${(props) => props.theme.space[0]};
   margin: ${(props) => props.theme.space[1]};
 `;
+export const SearchContainer = styled.View`
+  padding: ${(props) => props.theme.space[3]};
+`;
