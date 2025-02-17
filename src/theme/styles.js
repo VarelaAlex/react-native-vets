@@ -5,6 +5,7 @@ import { colors } from "./colors";
 import { sizes } from "./sizes";
 import { TouchableOpacity } from "react-native";
 import { WebView } from "react-native-webview";
+import MapView from "react-native-maps";
 
 export const Address = styled.Text`
   font-family: ${(props) => props.theme.fonts.body};
@@ -86,4 +87,8 @@ export const ContactButton = styled(Button).attrs({
 `;
 export const SearchContainer = styled.View`
   padding: ${(props) => props.theme.space[3]};
+`;
+export const Map = styled(MapView)`
+  height: 100%;
+  width: 100%;
 `;
