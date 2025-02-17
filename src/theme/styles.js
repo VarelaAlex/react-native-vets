@@ -1,4 +1,4 @@
-import { ActivityIndicator, Button } from "react-native-paper";
+import { ActivityIndicator, Avatar, Button, List } from "react-native-paper";
 import { Card } from "react-native-paper";
 import styled from "styled-components/native";
 import { colors } from "./colors";
@@ -91,4 +91,18 @@ export const SearchContainer = styled.View`
 export const Map = styled(MapView)`
   height: 100%;
   width: 100%;
+`;
+export const AvatarContainer = styled.View`
+  align-items: center;
+  padding: ${(props) => props.theme.space[3]};
+`;
+export const AvatarIcon = styled(Avatar.Icon).attrs({
+  size: 180,
+  backgroundColor: colors.button,
+})``;
+export const AvatarImage = styled(Avatar.Image).attrs({
+  size: 180,
+})``;
+export const SettingsItem = styled(List.Item)`
+  padding: ${(props) => props.theme.space[3]};
 `;
