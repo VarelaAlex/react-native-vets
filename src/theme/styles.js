@@ -6,7 +6,18 @@ import { sizes } from "./sizes";
 import { TouchableOpacity } from "react-native";
 import { WebView } from "react-native-webview";
 import MapView from "react-native-maps";
+import { CameraView } from "expo-camera";
 
+export const CameraViewer = styled(CameraView)`
+  flex: 1;
+`;
+export const CameraContainer = styled(TouchableOpacity)`
+  flex: 1;
+`;
+export const NoFavouritesYet = styled.View`
+  align-items: center;
+  justify-content: center;
+`;
 export const Address = styled.Text`
   font-family: ${(props) => props.theme.fonts.body};
   font-size: ${(props) => props.theme.fontSizes.caption};
